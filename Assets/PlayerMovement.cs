@@ -73,7 +73,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(jumpKey) && readyToJump && grounded)
         {
-            Debug.Log("cliff");
             readyToJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
